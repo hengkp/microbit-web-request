@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "lib": ["ES6","dom"],
+        "lib": ["dom", "es2015"],
+        "skipLibCheck": true,
         "noImplicitAny": true,
         "outDir": "built",
         "rootDir": "."

@@ -2,7 +2,6 @@
  * MakeCode extension for sending and receiving HTTP requests.
  */
  namespace webRequest {
-    declare var XMLHttpRequest: new () => XMLHttpRequest;
 
     /**
      * Performs an HTTP GET request and returns the response text.
