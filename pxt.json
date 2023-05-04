@@ -1,0 +1,24 @@
+{
+    "name": "microbit-web-request",
+    "version": "0.0.0",
+    "description": "A MakeCode extension for sending and receiving HTTP requests.",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "main.ts",
+        "libs/webRequest.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
