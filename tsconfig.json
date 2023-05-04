@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ES5",
-        "lib": ["dom"],
+        "lib": ["ES6","dom"],
         "noImplicitAny": true,
         "outDir": "built",
         "rootDir": "."
