@@ -1,8 +1,30 @@
+
 /**
  * MakeCode extension for sending and receiving HTTP requests.
  */
  namespace webRequest {
 
+    // Define the XMLHttpRequest interface
+    interface XMLHttpRequest {
+        readonly readyState: number;
+        readonly response: any;
+        readonly responseText: string;
+        readonly responseType: XMLHttpRequestResponseType;
+        readonly responseURL: string;
+        readonly status: number;
+        readonly statusText: string;
+        onreadystatechange: ((this: XMLHttpRequest, ev: Event) => any) | null;
+        timeout: number;
+        withCredentials: boolean;
+        abort(): void;
+        getAllResponseHeaders(): string;
+        getResponseHeader(header: string): string | null;
+        open(method: string, url: string, async?: boolean, user?: string | null, password?: string | null): void;
+        overrideMimeType(mime: string): void;
+        send(body?: Document | BodyInit | null): void;
+        setRequestHeader(header: string, value: string): void;
+    }
+     
     /**
      * Performs an HTTP GET request and returns the response text.
      * @param url The URL to send the request to.
